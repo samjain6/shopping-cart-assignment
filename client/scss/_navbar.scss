@@ -1,0 +1,63 @@
+@import "variables";
+@import "extends";
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+    .link-section {
+      margin-left: 70px;
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      margin-left: 20px;
+      @extend %light-text-Shared;
+      @extend %link-state;
+    }
+  }
+
+  .cart-icon {
+    font-size: 20px;
+    color: $primary-color;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 5px $desktop-padding + px 0px $desktop-padding + px;
+  box-shadow: 0px 14px 4px -15px #111111e0;
+}
+
+.top-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.signInbutton {
+  @extend %bold-text-Shared;
+  @extend %link-state;
+  margin-left: 10px;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  // color: $text-color;
+}
+
+.cart-button {
+  @extend %link-state;
+  background-color: $secondary-color;
+  padding: 15px;
+  color: $text-color;
+  border: none;
+}

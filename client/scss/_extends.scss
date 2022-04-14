@@ -1,0 +1,35 @@
+@import "variables";
+
+%bold-text-Shared {
+  font-family: $font-stack;
+  font-size: medium;
+  color: $text-color;
+}
+
+%light-text-Shared {
+  font-family: $font-stack;
+  font-size: small;
+  color: $light-text-color;
+}
+
+%button-shared {
+  @extend %light-text-Shared;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  background-color: $primary-color;
+  color: #fff;
+  border: none;
+  &:hover {
+    background-color: rgba($color: $primary-color, $alpha: 0.4);
+    color: $text-color;
+  }
+}
+
+%link-state {
+  cursor: pointer;
+  border: none;
+  &:hover {
+    color: $highlight-color;
+  }
+}

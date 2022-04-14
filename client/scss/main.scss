@@ -1,0 +1,43 @@
+@import "variables";
+@import "functions";
+@import "extends";
+@import "navbar";
+@import "login";
+@import "home.scss";
+@import "products";
+@import "cart";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-stack;
+  height: 100%;
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+.box .row.head {
+  z-index: 1;
+}
+
+.box .row.content {
+  // flex: 1 1 auto;
+  height: 80%;
+  overflow-y: hidden;
+}
+
+footer {
+  @extend %bold-text-Shared;
+  font-size: small;
+  background-color: $secondary-color;
+  padding: 0.7rem;
+  padding-left: $desktop-padding + px;
+  // flex: 0 1 40px;
+}
