@@ -6,6 +6,9 @@
   grid-template-columns: 1.5fr 4.5fr;
   height: 100%;
   padding: 0px $desktop-padding + px 0px $desktop-padding + px;
+  @media only screen and (max-width: 1200px) {
+    padding: 0px;
+  }
 }
 
 .menu {
@@ -25,8 +28,18 @@
   display: grid;
   padding: 10px;
   overflow-y: auto;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 180px));
+  // grid-template-columns: repeat(auto-fit, minmax(100px, 180px));
+  grid-template-columns: repeat(4, 1fr);
   gap: 12px;
+  @media only screen and (max-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .menuItem {

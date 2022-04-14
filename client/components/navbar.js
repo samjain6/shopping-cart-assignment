@@ -7,7 +7,7 @@ const navbarView = `<header class="header">
   <nav>
     <img
       src="/static/images/logo_2x.png"
-      alt="My Portfolio"
+      alt="My logo"
       id="logo"
       height="50px"
     />
@@ -38,6 +38,8 @@ const cartItem = `<div class="cartItemView">
 </div>
   <span class="totalPrice"></span>
 </div>`;
+
+// var x = window.matchMedia("(max-width: 600px)");
 
 customElements.define(
   "my-header",
