@@ -76,6 +76,8 @@ customElements.define(
       const cartElement = document.getElementsByClassName("modal-body")[0];
       cartElement.innerHTML = "";
       cartElement.classList.remove("modal-align");
+      var modalFooter = document.getElementsByClassName("modal-footer")[0];
+      modalFooter.style.display = "block";
       const cartProducts = [];
       data.forEach((element) => {
         const id = element.id;
