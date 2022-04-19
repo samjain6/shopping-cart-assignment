@@ -163,11 +163,11 @@ label {
   transition: all 0.1s ease-in-out;
   color: #6e7070; }
 
-.float-container.active label {
+.float-container.active_container label {
   transform: translate(0, -4px) scale(0.75);
   color: #7bd0d5; }
 
-.float-container.active input {
+.float-container.active_container input {
   border-bottom: 2px solid #7bd0d5; }
 
 .loginView {
